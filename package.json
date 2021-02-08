@@ -1,20 +1,21 @@
 {
   "name": "@mbrandao/tokens",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp build"
+    "build": "node-sass --output-style 'compressed' src/scss/ -o src/css/ && npx postcss src/css/*.css -u autoprefixer -d dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.3",
+    "autoprefixer": "^10.2.4",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
-    "postcss": "^8.2.4"
+    "postcss": "^8.2.5",
+    "postcss-cli": "^8.3.1"
   },
   "repository": {
     "type": "git",
