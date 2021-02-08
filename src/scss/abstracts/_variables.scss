@@ -1,0 +1,255 @@
+// letter spacing
+$med-letter-spacing-ultracompressed: -0.04;
+$med-letter-spacing-compressed: -0.02;
+$med-letter-spacing-default: 0;
+$med-letter-spacing-medium: 0.02;
+$med-letter-spacing-expanded: 0.05;
+$med-letter-spacing-distant: 0.1;
+$med-letter-spacing-far: 0.2;
+
+// font size
+$med-font-size-nano: 10px;
+$med-font-size-xxxs: 12px;
+$med-font-size-xxs: 14px;
+$med-font-size-xs: 16px;
+$med-font-size-sm: 20px;
+$med-font-size-md: 24px;
+$med-font-size-lg: 32px;
+$med-font-size-xl: 40px;
+$med-font-size-xxl: 48px;
+$med-font-size-xxxl: 64px;
+$med-font-size-huge: 96px;
+
+:root {
+  // brand color
+  --med-color-brand-primary-darkest: #074b55;
+  --med-color-brand-primary-darkest-rgb: 7, 75, 85;
+  --med-color-brand-primary-dark: hsla(188, 75%, 30%, 1);
+  --med-color-brand-primary-medium: hsla(188, 52%, 48%, 1);
+  --med-color-brand-primary-light: hsla(188, 69%, 67%, 1);
+  --med-color-brand-primary-lightest: hsla(188, 77%, 83%, 1);
+
+  --med-color-brand-primary-gradient: linear-gradient(to bottom, var(--med-color-brand-primary-medium), var(--med-color-brand-primary-dark));
+
+  // aula color
+  --med-color-aula-darkest: hsla(168, 85%, 18%, 1);
+  --med-color-aula-dark: hsla(168, 75%, 30%, 1);
+  --med-color-aula-medium: hsla(168, 52%, 48%, 1);
+  --med-color-aula-light: hsla(168, 69%, 67%, 1);
+  --med-color-aula-lightest: hsla(168, 77%, 83%, 1);
+
+  // material color
+  --med-color-material-darkest: hsla(24, 85%, 18%, 1);
+  --med-color-material-dark: hsla(24, 75%, 30%, 1);
+  --med-color-material-medium: hsla(24, 52%, 48%, 1);
+  --med-color-material-light: hsla(24, 69%, 67%, 1);
+  --med-color-material-lightest: hsla(24, 77%, 83%, 1);
+
+  // questões color
+  --med-color-questoes-darkest: hsla(200, 85%, 18%, 1);
+  --med-color-questoes-dark: hsla(200, 75%, 30%, 1);
+  --med-color-questoes-medium: hsla(200, 52%, 48%, 1);
+  --med-color-questoes-light: hsla(200, 69%, 67%, 1);
+  --med-color-questoes-lightest: hsla(200, 77%, 83%, 1);
+
+  // revalida color
+  --med-color-revalida-darkest: hsla(342, 85%, 18%, 1);
+  --med-color-revalida-dark: hsla(342, 75%, 30%, 1);
+  --med-color-revalida-medium: hsla(342, 52%, 48%, 1);
+  --med-color-revalida-light: hsla(342, 69%, 67%, 1);
+  --med-color-revalida-lightest: hsla(342, 77%, 83%, 1);
+
+  // provas & checklist color
+  --med-color-provaschecklist-darkest: hsla(268, 85%, 18%, 1);
+  --med-color-provaschecklist-dark: hsla(268, 75%, 30%, 1);
+  --med-color-provaschecklist-medium: hsla(268, 52%, 48%, 1);
+  --med-color-provaschecklist-light: hsla(268, 69%, 67%, 1);
+  --med-color-provaschecklist-lightest: hsla(268, 77%, 83%, 1);
+
+  // neutral dark color
+  --med-color-neutral-dark-prime: hsla(0, 0%, 8%, 1);
+  --med-color-neutral-dark-40: hsla(0, 0%, 16%, 1);
+  --med-color-neutral-dark-30: hsla(0, 0%, 28%, 1);
+  --med-color-neutral-dark-20: hsla(0, 0%, 36%, 1);
+  --med-color-neutral-dark-10: hsla(0, 0%, 48%, 1);
+
+  // neutral light color
+  --med-color-neutral-light-prime: hsla(0, 0%, 98%, 1);
+  --med-color-neutral-light-40: hsla(0, 0%, 92%, 1);
+  --med-color-neutral-light-30: hsla(0, 0%, 84%, 1);
+  --med-color-neutral-light-20: hsla(0, 0%, 76%, 1);
+  --med-color-neutral-light-10: hsla(0, 0%, 68%, 1);
+
+  --med-color-neutral-gradient: linear-gradient(to bottom, var(--med-color-neutral-dark-prime), var(--med-color-neutral-light-prime));
+
+  // feedback warning color
+  --med-color-feedback-warning-darkest: hsla(52, 85%, 17%, 1);
+  --med-color-feedback-warning-dark: hsla(52, 75%, 30%, 1);
+  --med-color-feedback-warning-medium:hsla(52, 52%, 48%, 1);
+  --med-color-feedback-warning-light: hsla(52, 69%, 67%, 1);
+  --med-color-feedback-warning-lightest: hsla(52, 77%, 83%, 1);
+
+  // feedback warning color
+  --med-color-feedback-error-darkest: hsla(4, 85%, 17%, 1);
+  --med-color-feedback-error-dark: hsla(4, 75%, 30%, 1);
+  --med-color-feedback-error-medium: hsla(4, 52%, 48%, 1);
+  --med-color-feedback-error-light: hsla(4, 69%, 67%, 1);
+  --med-color-feedback-error-lightest:  hsla(4, 77%, 83%, 1);
+
+  // feedback warning color
+  --med-color-feedback-success-darkest: hsla(128, 85%, 17%, 1);
+  --med-color-feedback-success-dark: hsla(128, 75%, 30%, 1);
+  --med-color-feedback-success-medium: hsla(128, 52%, 48%, 1);
+  --med-color-feedback-success-light: hsla(128, 69%, 67%, 1);
+  --med-color-feedback-success-lightest: hsla(128, 77%, 83%, 1);
+
+  // font family
+  --med-font-family-brand: 'fsemeric';
+  --med-font-family-base: 'fsemeric';
+
+  // font size
+  --med-font-size-nano: #{$med-font-size-nano};
+  --med-font-size-xxxs: #{$med-font-size-xxxs};
+  --med-font-size-xxs: #{$med-font-size-xxs};
+  --med-font-size-xs: #{$med-font-size-xs};
+  --med-font-size-sm: #{$med-font-size-sm};
+  --med-font-size-md: #{$med-font-size-md};
+  --med-font-size-lg: #{$med-font-size-lg};
+  --med-font-size-xl: #{$med-font-size-xl};
+  --med-font-size-xxl: #{$med-font-size-xxl};
+  --med-font-size-xxxl: #{$med-font-size-xxxl};
+  --med-font-size-huge: #{$med-font-size-huge};
+
+  // font weight
+  --med-font-weight-thin: 250;
+  --med-font-weight-light: 300;
+  --med-font-weight-regular: 400;
+  --med-font-weight-medium: 500;
+  --med-font-weight-semibold: 600;
+  --med-font-weight-bold: 700;
+  --med-font-weight-extrabold: 250;
+  --med-font-weight-heavy: 900;
+
+  // line height
+  --med-line-height-compressed: 100%;
+  --med-line-height-default: #{line-height()};
+  --med-line-height-double: 200%;
+
+  // spacing inset
+  --med-spacing-inset-nano: 4px;
+  --med-spacing-inset-xs: 8px;
+  --med-spacing-inset-sm: 16px;
+  --med-spacing-inset-base: 24px;
+  --med-spacing-inset-md: 32px;
+  --med-spacing-inset-lg: 40px;
+  --med-spacing-inset-xl: 48px;
+  --med-spacing-inset-xxl: 64px;
+
+  // spacing squish
+  --med-spacing-squish-nano: 4px 8px;
+  --med-spacing-squish-xs: 8px 16px;
+  --med-spacing-squish-sm: 8px 24px;
+  --med-spacing-squish-base: 8px 32px;
+  --med-spacing-squish-md: 16px 24px;
+  --med-spacing-squish-lg: 16px 32px;
+  --med-spacing-squish-xl: 24px 32px;
+  --med-spacing-squish-xxl: 32px 40px;
+
+  // spacing stretch
+  --med-spacing-stretch-nano: 8px 4px;
+  --med-spacing-stretch-xs: 16px 8px;
+  --med-spacing-stretch-sm: 24px 8px;
+  --med-spacing-stretch-base: 32px 8px;
+  --med-spacing-stretch-md: 24px 16px;
+  --med-spacing-stretch-lg: 32px 16px;
+  --med-spacing-stretch-xl: 32px 24px;
+  --med-spacing-stretch-xxl: 40px 32px;
+
+  // spacing inline
+  --med-spacing-inline-quark: 2px;
+  --med-spacing-inline-nano: 4px;
+  --med-spacing-inline-xxxs: 8px;
+  --med-spacing-inline-base: 16px;
+  --med-spacing-inline-xxs: 24px;
+  --med-spacing-inline-xs: 32px;
+  --med-spacing-inline-sm: 40px;
+  --med-spacing-inline-md: 48px;
+  --med-spacing-inline-lg: 56px;
+  --med-spacing-inline-xl: 64px;
+  --med-spacing-inline-xxl: 72px;
+  --med-spacing-inline-xxxl: 80px;
+  --med-spacing-inline-huge: 120px;
+  --med-spacing-inline-ultra: 160px;
+
+  // spacing stack
+  --med-spacing-stack-quark: 2px;
+  --med-spacing-stack-nano: 4px;
+  --med-spacing-stack-xxxs: 8px;
+  --med-spacing-stack-base: 16px;
+  --med-spacing-stack-xxs: 24px;
+  --med-spacing-stack-xs: 32px;
+  --med-spacing-stack-sm: 40px;
+  --med-spacing-stack-md: 48px;
+  --med-spacing-stack-lg: 56px;
+  --med-spacing-stack-xl: 64px;
+  --med-spacing-stack-xxl: 72px;
+  --med-spacing-stack-xxxl: 80px;
+  --med-spacing-stack-huge: 120px;
+  --med-spacing-stack-ultra: 160px;
+
+  // border radius
+  --med-border-radius-none: 0;
+  --med-border-radius-quark: 2px;
+  --med-border-radius-nano: 4px;
+
+  --med-border-radius-sm: 8px;
+  --med-border-radius-md: 16px;
+  --med-border-radius-lg: 24px;
+
+  --med-border-radius-pill: 31.25em;
+  --med-border-radius-full: 50%;
+
+  // speech bubble
+  --med-border-radius-speech-left-down: 8px 8px 8px 0;
+  --med-border-radius-speech-right-down: 8px 8px 0 8px;
+  --med-border-radius-speech-right-up: 8px 0 8px 0px;
+  --med-border-radius-speech-left-up: 0 8px 8px 0px;
+
+  // table
+  --med-border-radius-table-down-sm: 0 0 8px 8px;
+  --med-border-radius-table-up-sm: 8px 8px 0 0;
+
+  --med-border-radius-table-down-md: 16px 16px 0 0;
+  --med-border-radius-table-up-md: 0 0 16px 16px;
+
+  // border widths
+  --med-border-width-none: 0;
+  --med-border-width-quark: 0.25px;
+  --med-border-width-nano: 0.5px;
+  --med-border-width-hairline: 1px;
+  --med-border-width-thin: 2px;
+  --med-border-width-thick: 4px;
+  --med-border-width-bold: 8px;
+  --med-border-width-heavy: 16px;
+
+  // opacity levels
+  --med-opacity-level-semiopaque: 0.8;
+  --med-opacity-level-intense: 0.64;
+  --med-opacity-level-half: 0.5;
+  --med-opacity-level-medium: 0.32;
+  --med-opacity-level-light: 0.16;
+  --med-opacity-level-semitransparent: 0.08;
+
+  // shadow levels
+  --med-shadow-level-0: none;
+  --med-shadow-level-1: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-2: 0 2px 4px rgba(0, 0, 0, 0.14), 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-3: 0 3px 3px rgba(0, 0, 0, 0.14), 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-4: 0 0 2px rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-5: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-6: 0 8px 10px rgba(0, 0, 0, 0.14), 0 3px 14px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-7: 0 9px 12px rgba(0, 0, 0, 0.14), 0 3px 16px rgba(0, 0, 0, 0.12), 0 5px 6px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-8: 0 12px 17px rgba(0, 0, 0, 0.14), 0 5px 22px rgba(0, 0, 0, 0.12), 0 7px 8px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-9: 0 16px 24px rgba(0, 0, 0, 0.14), 0 6px 30px rgba(0, 0, 0, 0.12), 0 8px 10px rgba(0, 0, 0, 0.2);
+  --med-shadow-level-10: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12), 0 11px 15px rgba(0, 0, 0, 0.2);
+}

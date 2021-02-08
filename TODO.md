@@ -1,0 +1,3 @@
+- Criar função sass para converter cor em rgb (ionic)
+- usar npm scripts invés de gulp
+- pegar browserlist com brunão
