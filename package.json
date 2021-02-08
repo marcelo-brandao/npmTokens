@@ -1,6 +1,6 @@
 {
-  "name": "med-components-css",
-  "version": "1.0.0",
+  "name": "@mbrandao/tokens",
+  "version": "1.0.1",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
@@ -15,5 +15,13 @@
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^4.1.0",
     "postcss": "^8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelo-brandao/npmTokens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcelo-brandao/npmTokens/issues"
+  },
+  "homepage": "https://github.com/marcelo-brandao/npmTokens#readme"
 }
